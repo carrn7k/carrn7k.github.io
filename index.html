@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--SCRIPTS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/slidingNav.js"></script>
     <!--FONTS-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
@@ -38,6 +37,11 @@
   	</div>
   </nav>
   <div class="container">
+
+  	<div class="project-pop">
+  		<span class="close-project">X</span>
+  	</div>
+
   	<header class="row">
   		<div class="col-md-4" id="logo">
   			<img src="images/logo.jpg" height="80" width="90" alt="Udacity Logo">
@@ -76,39 +80,44 @@
 		<h2 class="text-center text-uppercase" id="projects-head">Projects</h2>
 		<div class="project">
 	  		<h4 class="project-title">Book Catalog</h4>
-	  		<a href="https://github.com/carrn7k/Book-Catalog"><img src="images/item-catalog.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+	  		<a href="https://github.com/carrn7k/Book-Catalog">
+	  			<img src="images/item-catalog.png" class="img-responsive img-thumbnail" alt="project picture">
+	  		</a>
 	  		<p class="project-info">An book catalog with a user registration and authentication system</p>
 	  	</div>
 	  	<div class="project">
 	  		<h4 class="project-title">User Blog</h4>
-	  		<a href="http://projecttest-143401.appspot.com/blog"><img src="images/blog.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+	  		<a href="http://projecttest-143401.appspot.com/blog">
+					<img src="images/blog.png" class="img-responsive img-thumbnail" alt="project picture">
+				</a>
 	  		<p class="project-info">A live blog where users can sign in, input and update content.</p>
 	  	</div>
 	  	<div class="project">
 	  		<h4 class="project-title">Neighborhood Map</h4>
-	  		<a href="https://github.com/carrn7k/neighborhood-map"><img src="images/map.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+	  		<a href="https://github.com/carrn7k/neighborhood-map">
+	  			<img src="images/map.png" class="img-responsive img-thumbnail" alt="project picture">
+	  		</a>
 	  		<p class="project-info">A single page application featuring notable locations with reviews and photos</p>
 	  	</div>
 	  	<div class="project">
-	  		<h4 class="project-title">Tournament</h4>
-	  		<a href="https://github.com/carrn7k/SQL-Tournament/tree/master/vagrant"><img src="images/tournament.jpg" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info">A tournament game built using MySQL, Postgres and python</p>
-	  	</div>
-	  	<div class="project">
-	  		<h4 class="project-title">Movies Website</h4>
-	  		<a href="https://github.com/carrn7k/Movie-App"><img src="images/movies.png" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info">A movie/entertainment website built using obect-oriented functionality in Python</p>
-	  	</div>
-	  	<div class="project">
-	  		<h4 class="project-title">Linux Server</h4>
-	  		<a href="#"><img src="images/linux.jpg" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info">A linux server which can host web applications</p>
-	  	</div>
-	  	<div class="project">
 	  		<h4 class="project-title">React App</h4>
-	  		<a href="https://carrn7k.github.io/robofriends/"><img src="images/react.jpg" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info">App to Learn React (Created by Andrei Neagoie)</p>
+	  	  <a href="https://carrn7k.github.io/robofriends/">
+	  		<img src="images/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+	  		<p class="project-info">App built to learn React/Redux (Created by Andrei Neagoie)</p>
 	  	</div>
+	  	<div class="project">
+	  		<h4 class="project-title">React App with Docker (Frontend)</h4>
+	  	  <a href="https://github.com/carrn7k/smart-brain">
+	  		<img src="images/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+	  		<p class="project-info"></p>
+	  	</div>
+			<div class="project">
+	  		<h4 class="project-title">React App with Docker (Backend)</h4>
+	  	  <a href="https://github.com/carrn7k/smart-brain-api">
+	  		<img src="images/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+	  		<p class="project-info"></p>
+	  	</div>
+	
 	</section>
 	<footer class="row">
   		<div class="col-md-12 text-center">
@@ -116,5 +125,7 @@
   		</div>
 	</footer>
   </div>
+
+  <script src="js/slidingNav.js"></script>
   </body>
   </html>
