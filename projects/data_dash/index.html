@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+  	<title>Dashboard</title>
+  	<link rel="stylesheet" href="style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div id="banner">
+		<h1>A Look at Crime Rates </h1>
+	</div>
+
+	<div class="data-container">
+		<div id="main">
+			<div id="map-guide">
+				<div id="guide-card">
+
+					<p>Murder count and murder rates for countries ranging from the years <span id="year-span">1990 - 2015</span>. Data is not available for some years. Years lacking data will be shaded grey on the map</p>
+
+					<div id="measure-change-cntr">
+
+						<div id="measure-cntr">
+							<h5>Select Measurement:</h5>
+							<select>
+								<option value="murderRate">Murder Rate</option>
+								<option value="murderCount">Murder Count</option>
+							</select>
+						</div>
+						
+
+						<div id="year-cntr">
+							<h5>Select Year:</h5>
+							<div id="year-input">
+								<input type="range" step="1" />
+								<div class="year-display"></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="info">
+						<p>*click a country to see yearly comparison</p>
+					</div>
+				</div>
+				
+			</div>
+			<svg
+			  version="1.1"
+			  baseProfile="full"
+			  xmlns="http://www.w3.org/2000/svg"
+			  id="map">
+			</svg>
+
+		</div>
+
+		<div id="bar-container" class="hide-chart">
+			<i class="far fa-times-circle" id="rmv-chart"></i>
+			<!--<button id="test2">Click Me</button>-->
+			<svg
+			  version="1.1"
+			  baseProfile="full"
+			  xmlns="http://www.w3.org/2000/svg"
+			  id="bar-chart">
+			</svg>
+		</div>
+
+
+		<!--
+		<svg
+		  version="1.1"
+		  baseProfile="full"
+		  xmlns="http://www.w3.org/2000/svg"
+		  id="place-holder1">
+		</svg>
+		<svg
+		  version="1.1"
+		  baseProfile="full"
+		  xmlns="http://www.w3.org/2000/svg"
+		  id="place-holder2">
+		</svg>
+		-->
+	</div>
+
+
+<!--
+	<select>
+		<option value="population">Population</option>
+		<option value="populationDensity">Population Density</option>
+		<option value="medianAge">Median Age</option>
+		<option value="fertilityRate">Fertility Rate</option>
+	</select>
+-->
+	<script src="http://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>

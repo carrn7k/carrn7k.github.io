@@ -5,127 +5,205 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--SCRIPTS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
     <title>Portfolio Project</title>
   </head>
+
   <body>
-  <!--MENU ICON FOR SCREENS BELOW 550px-->
-  <div id="menu__icon">
-	<span></span>
-	<span></span>
-	<span></span>
-  </div>
-  <nav id="nav_container">
-  	<div class="nav-row">
-		<ul id="nav-list">
-			<li><span class="text-uppercase" id="project-hub">project hub</span></li>
-			<li><div class="nav-item"><a href="https://github.com/carrn7k/Movie-App">movies website</a></div></li>
-			<li><div class="nav-item"><a href="http://projecttest-143401.appspot.com/blog">user blog</a></div></li>
-			<li><div class="nav-item"><a href="https://github.com/carrn7k/SQL-Tournament/tree/master/vagrant">tournament</a></div></li>
-			<li><div class="nav-item"><a href="https://github.com/carrn7k/Book-Catalog">item catalog</a></div></li>
-			<li><div class="nav-item"><a href="#">interactive map</a></div></li>
-			<li><div class="nav-item"><a href="#">game</a></div></li>
-			<li><div class="nav-item"><a href="#">linux server</a></div></li>
-		</ul>
-  	</div>
-  </nav>
-  <div class="container">
 
-  	<div class="project-pop">
-  		<span class="close-project">X</span>
-  	</div>
+    <div class="modal">
+      <div class="modal-close">X</div>
+      <div class="modal-inner">
+        <div class="modal-title">
+          <h2>Test Title</h2>
+        </div>
+        <div class="modal-body">
+          <p class="modal-text"></p>
+          <a href="" target="_blank" class="github-link"></a>
+          <a href="" target="_blank" class="site-link"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="main">
 
-  	<header class="row">
-  		<div class="col-md-4" id="logo">
-  			<img src="images/logo.jpg" height="80" width="90" alt="Udacity Logo">
-  		</div>
-  		<div class="col-md-8 text-right" id="title">
-  			<h1>Heath Carr</h1>
-  			<h4>Fullstack Developer</h4>
-  		</div>
-  	</header>
-	<div class="row">
-		<div class="col-md-12">
-	  		<hr>
-	  	</div>
-	</div>
-  	<section class="main-content">
-  		<div class="row" id="top-section">
-  			<div class="outer-div">
-  				<h2 class="text-uppercase" id="bio-title">About Me</h2>
-  				<p id="bio-text">My name's Heath Carr, and I've been studying programming and web design for the past few years while living in and teaching English in Japan. I've become adept with both frontend and backend technologies. I'm continually updating my skills with new technologies and am enjoying the lifelong learning required to be in this field.</p>
-  			</div>
-  			<div class="outer-div">
-  				<div class="skills-container">
-			  		<ul id="skills">
-			  			<li>SKILLS</li>
-	  					<li><div class="list-item">html/css</div></li>
-	  					<li><div class="list-item">javascript</div></li>
-	  					<li><div class="list-item">python</div></li>
-	  					<li><div class="list-item">SQL</div></li>
-	  					<li><div class="list-item">react/redux</div></li>
-			  		</ul>
-			  	</div>
-  			</div>
-  		</div>
-	</section>
-	<section class="row" id="project-section">
-		<h2 class="text-center text-uppercase" id="projects-head">Projects</h2>
-		<div class="project">
-	  		<h4 class="project-title">Book Catalog</h4>
-	  		<a href="https://github.com/carrn7k/Book-Catalog">
-	  			<img src="images/item-catalog.png" class="img-responsive img-thumbnail" alt="project picture">
-	  		</a>
-	  		<p class="project-info">An book catalog with a user registration and authentication system</p>
-	  	</div>
-	  	<div class="project">
-	  		<h4 class="project-title">User Blog</h4>
-	  		<a href="http://projecttest-143401.appspot.com/blog">
-					<img src="images/blog.png" class="img-responsive img-thumbnail" alt="project picture">
-				</a>
-	  		<p class="project-info">A live blog where users can sign in, input and update content.</p>
-	  	</div>
-	  	<div class="project">
-	  		<h4 class="project-title">Neighborhood Map</h4>
-	  		<a href="https://github.com/carrn7k/neighborhood-map">
-	  			<img src="images/map.png" class="img-responsive img-thumbnail" alt="project picture">
-	  		</a>
-	  		<p class="project-info">A single page application featuring notable locations with reviews and photos</p>
-	  	</div>
-	  	<div class="project">
-	  		<h4 class="project-title">React App</h4>
-	  	  <a href="https://carrn7k.github.io/robofriends/">
-	  		<img src="images/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info">App built to learn React/Redux (Created by Andrei Neagoie)</p>
-	  	</div>
-	  	<div class="project">
-	  		<h4 class="project-title">React App with Docker (Frontend)</h4>
-	  	  <a href="https://github.com/carrn7k/smart-brain">
-	  		<img src="images/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info"></p>
-	  	</div>
-			<div class="project">
-	  		<h4 class="project-title">React App with Docker (Backend)</h4>
-	  	  <a href="https://github.com/carrn7k/smart-brain-api">
-	  		<img src="images/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
-	  		<p class="project-info"></p>
-	  	</div>
-	
-	</section>
-	<footer class="row">
-  		<div class="col-md-12 text-center">
-  			<a href="#">Back to Top</a>
-  		</div>
-	</footer>
-  </div>
+      <div class="tabs">
+        <div class="tab tab-enable" id="contact-tab">contact</div>
+        <div class="tab tab-enable" id="credentials-tab">credentials</div>
+        <div class="tab tab-enable" id="projects-tab">projects</div>
+        <div class="tab tab-enable" id="about-tab">about</div>
+        <div class="tab tab-disable" id="home-tab">top</div>
+      </div>
 
-  <script src="js/slidingNav.js"></script>
+      <div class="landing">
+        <p id="landing-name">Heath Carr, <span id="landing-msg">fullstack web developer</span></p>
+        <div class="learn-more">
+          <p>Learn More</p>
+        </div>
+      </div>
+      
+      <div class="pages">
+
+        <div class="page" id="about">
+          <!--<img src="src/img/profile.jpg" height="140" width="120" />-->
+          <!--<h1>- About -</h1>-->
+          <div class="page-inner" id="about-inner">
+            <div id="skills">
+              <div id="skills-body">
+                <div class="skills-column">
+                  <h3>Frontend</h3>
+                  <ul>
+                    <li>html/css/sass</li>
+                    <li>javascript</li>
+                    <li>react/redux</li>
+                    <li>responsive design</li>
+                    <li>version control/git
+                    <li>gulp</li>
+                  </ul>
+                </div>
+                <div class="skills-column">
+                  <h3>Backend</h3>
+                  <ul>
+                    <li>python</li>
+                    <li>nodejs</li>
+                    <li>flask</li>
+                    <li>sql</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-details">
+              <h1>Me...</h1>
+              <p>
+              My name's Heath Carr. Five years ago I moved to Japan to teach English. And while I love teaching, over the past five years I've also developed a passion for web development and coding. I spend much of the free time I have studying web design and coding. Thanks to the vast resources available (especially Udacity, Udemy and Stack Overflow) on the internet, I have become a proficient web developer. I'm comfortable programming in Python and Javascript and have a lot of experience with HTML and CSS. Because of the rapidly changing nature of this industry, I'm continually updating my skills. Most recently I have been learning React/Redux, Docker, and AWS. Although I still have much to learn, I'm eager to contribute to this industry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" id="projects">
+          <h1>Projects...</h1>
+          <div class="page-inner" id="projects-inner">
+            <div class="projects-container">
+              <div class="project-tile" id="item">
+                <div class="project-title">
+                    <p>RESTful App</p>
+                </div>
+                <img src="src/img/item-catalog.png" class="img-responsive img-thumbnail" alt="project picture">
+              </div>
+              <div class="project-tile" id="blog">
+                <div class="project-title">
+                    <p>User Blog</p>
+                </div>
+                <img src="src/img/blog.png" class="img-responsive img-thumbnail" alt="project picture">
+              </div>
+              <div class="project-tile" id="singlePage">
+                <div class="project-title">
+                    <p>SPA (Neighborhood Map)</p>
+                </div>
+                <img src="src/img/map.png" class="img-responsive img-thumbnail" alt="project picture">
+              </div>
+              <div class="project-tile" id="reactFront">
+                <div class="project-title">
+                    <p>React App (Frontend)</p>
+                </div>
+                <img src="src/img/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+              </div>
+              <div class="project-tile" id="reactBack">
+                <div class="project-title">
+                    <p>React App (Backend)</p>
+                </div>
+                <img src="src/img/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+              </div>
+              <div class="project-tile" id="reactRedux">
+                <div class="project-title">
+                    <p>React/Redux App</p>
+                </div>
+                <img src="src/img/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+              </div>
+              <div class="project-tile" id="d3">
+                <div class="project-title">
+                    <p>d3</p>
+                </div>
+                <img src="src/img/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" id="credentials">
+          <div class="page-inner" id="credentials-inner">
+          <h1>...Credentials</h1>
+            <div id="credentials-container">
+
+              <div class="credential">
+                <div class="credential-title">
+                  <h3>Udacity</h3>
+                  <p>fullstack nanodegree</p>
+                </div>
+                <div class="line"></div>
+                <img src="src/img/cert.jpg" width="277" height="270" />
+              </div>
+
+              <div class="credential">
+                <div class="credential-title">
+                  <h3>Udemy</h3>
+                  <p>advanced web development</p>
+                </div>
+                <div class="line"></div>
+                <img src="src/img/adv-web.jpg" width="277" height="270" />
+              </div>
+
+              <div class="credential">
+                <div class="credential-title">
+                  <h3>Udemy</h3>
+                  <p>senior web developer</p>
+                </div>
+                <div class="line"></div>
+                <img src="src/img/sen-page-001.jpg" width="277" height="270" />
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="page" id="contact">
+          <div class="page-inner" id="contact-inner">
+            <h1>Where to Find Me</h1>
+            <div class="contact">
+              <i class="far fa-envelope"></i> 
+              <p class="contact-location">carrn7k@gmail.com</p>
+            </div>
+            <div class="contact">
+              <i class="fab fa-github"></i>
+              <a class="contact-location" href="https://github.com/carrn7k" target="_blank"> https://github.com/carrn7k</a>
+            </div>
+            <div class="contact">
+              <i class="fab fa-linkedin"></i>
+              <a class="contact-location" href="https://www.linkedin.com/in/heath-carr/" target="_blank"> https://www.linkedin.com/in/heath-carr/</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </body>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="src/js/constants.js" /></script>
+  <script type="text/javascript" src="src/js/main.js" /></script>
+
   </html>
