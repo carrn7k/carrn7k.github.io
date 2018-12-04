@@ -297,14 +297,15 @@ html, body, .main {
 .projects-container {
 	display: flex;
 	flex-wrap: wrap;
-	height: 70vh;
+	justify-content: 	center;
+	height: 55vh;
 	/*margin: -40px 37px 30px 37px;*/
 }
 .project-tile {
 	position: relative;
-	margin: 7px;
-	width: 31%;
-	height: 207px;
+	margin: 30px 7px 2px 7px;
+	width: 21%;
+	height: 135px;
 	border: 1px solid grey;
 	cursor: pointer;
 }
@@ -327,8 +328,8 @@ html, body, .main {
   transition: .2s;
 }
 .project-title-display {
-	height: 50px;
-	font-size: 16px;
+	height: 49px;
+	font-size: 14px;
 	box-shadow: 1px 1px 3px 1px black;
 }
 
@@ -381,6 +382,7 @@ html, body, .main {
 }
 #credentials-container img {
 	margin-left: 20px;
+	height: 45%;
 	width: 34%;
 	border: 1px solid black;
 	border-radius: 2px;
@@ -466,7 +468,6 @@ html, body, .main {
 	.projects-container {
 		justify-content: center;
 	}
-	
 	#projects {
 		flex-direction: column;
 		justify-content: center;
@@ -482,6 +483,14 @@ html, body, .main {
 
 /* Medium Screens */
 @media screen and (max-width: 960px) {
+	.modal-title {
+		font-size: 28px;
+    margin-top: 5px;
+	}
+	.modal-body {
+		padding: 11px;
+		font-size: 17px;
+	}
 	.page {
 		min-height: 70vh;
 	}
@@ -520,7 +529,14 @@ html, body, .main {
 
 /* Tablet View */
 @media screen and (max-width: 840px) {
-
+	.modal-title {
+		font-size: 26px;
+    margin-top: 0px;
+	}
+	.modal-body {
+		padding: 11px;
+		font-size: 15px;
+	}
 	/* landing mobile */
 	#landing-name {
 		font-size: 36px;
@@ -627,11 +643,33 @@ html, body, .main {
 }
 
 @media screen and (max-width: 490px) {
+	.modal-close {
+		top: 20px;
+    right: 24px;
+    font-size: 25px;
+    color: black;
+	}
+	.modal-inner {
+		margin: 5% 5% 5% 5%;
+    padding: 5px;
+	}
+	.modal-title {
+		font-size: 20px;
+		margin-top: 15px;
+	}
+	.modal-body {
+		padding: 11px;
+		font-size: 12px;
+	}
+
+	.tabs, .tab {
+		display: none;
+	}
 	.landing {
 		padding: 0 35px 0 0;
 	}
 	#landing-name {
-		margin-left: 18px;		
+		margin-left: 28px;		
     font-size: 28px;
 	}
 	#landing-msg {
@@ -666,6 +704,11 @@ html, body, .main {
 	}
 	.project-tile {
 		height: 90px;
+	}
+	.project-title-display {
+		height: 35px;
+		font-size: 9px;
+		box-shadow: 1px 1px 3px 1px black;
 	}
 	
 	#credentials {

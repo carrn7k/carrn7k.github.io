@@ -42,11 +42,13 @@ $( document ).ready(function() {
 
 	// project hover test
 	$('.project-tile').mouseover(function() {
-		$( this ).find('.project-title').css({'height': '58px', 'font-size': '17px'});
+		$( this ).find('.project-title').addClass('project-title-display');
+		// $( this ).find('.project-title').css({'height': '53px', 'font-size': '14px'});
 	});
 
 	$('.project-tile').mouseout(function() {
-		$( this ).find('.project-title').css({'height': '0px', 'font-size': '0px'});
+		$( this ).find('.project-title').removeClass('project-title-display');
+		// $( this ).find('.project-title').css({'height': '0px', 'font-size': '0px'});
 	});
 
 

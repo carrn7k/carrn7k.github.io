@@ -1,8 +1,4 @@
-/*
-const d3 = require("d3");
-const q = require("d3-queue");
-global.fetch = require("node-fetch");
-*/
+
 
 /*
 d3.csv('./API_VC.IHR.PSRC.P5_DS2_en_csv_v2.csv', function(err, data) {
@@ -39,18 +35,16 @@ d3.queue()
   .defer(d3.xml, './API_VC.IHR.PSRC.P5_DS2_en_xml_v2.xml')
   .await(function(error, mapData, countryCodes, crimeData, xmlData) {
 
-  	if (error) throw error;
+  if (error) throw error;
 
-  	// *********** Data Set Up ***************
-	var geoData = topojson.feature(mapData, 
-		mapData.objects.countries).features
+  // *********** Data Set Up ***************
+	var geoData = topojson.feature(mapData, mapData.objects.countries).features
 
-  	var countries = {};
-  	var countryArray = [];
+  var countries = {};
+  var countryArray = [];
 
-  	// ************ Format XML Data ************
-
-  	var data = [...xmlData.querySelectorAll("record")];
+  // ************ Format XML Data ************
+  var data = [...xmlData.querySelectorAll("record")];
 	var formattedXMLData = data.map(function(record) {
 			let fields = record.querySelectorAll("field")
 			return {
@@ -60,7 +54,7 @@ d3.queue()
 			}
 	})
 
-  	// format crime data 
+  // format crime data 
 	crimeData.forEach(function(row) {
 
 		var name = row['Country or Area'];
