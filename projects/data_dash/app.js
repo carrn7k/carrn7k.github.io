@@ -32,7 +32,7 @@ d3.xml('./API_VC.IHR.PSRC.P5_DS2_en_xml_v2.xml', function(err, xml) {
 
 
 // ******************* Initial Map View ********************************* //
-q.queue()
+d3.queue()
   .defer(d3.json, '//unpkg.com/world-atlas@1.1.4/world/50m.json')
   .defer(d3.json, './countryCodes.json')
   .defer(d3.csv, './crime_data.csv')
