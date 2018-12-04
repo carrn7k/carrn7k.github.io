@@ -1,7 +1,8 @@
+/*
 const d3 = require("d3");
 const q = require("d3-queue");
 global.fetch = require("node-fetch");
-
+*/
 
 /*
 d3.csv('./API_VC.IHR.PSRC.P5_DS2_en_csv_v2.csv', function(err, data) {
