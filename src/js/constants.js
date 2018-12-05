@@ -89,8 +89,9 @@ const texts = {
 	 		github:'',
 	 		site: 'projects/data_dash/index.html',
 	 	},
-	 	text: `I don't have a lot of experience with d3, but I had a lot of fun building this app. The app loads recent crime data and then 
-	 			visualizes that data using a histogram and a world map.`
+	 	text: `I don't have a lot of experience with d3, but I had a lot of fun building this app as a way to improve my knowledge. The app loads recent
+	 	 crime data and then visualizes that data using a histogram and a world map. Formatting the data and integrating it with the 
+	 	 visualization and transitions was a bit difficult at first, but I really enjoyed working with the d3 library.`
 	 }
 
 }

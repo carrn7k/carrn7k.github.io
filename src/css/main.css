@@ -51,6 +51,10 @@ html, body, .main {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 }
+.modal-text-container {
+	display: flex;
+	flex-direction: column;
+}
 
 .landing {
 	display: flex;
