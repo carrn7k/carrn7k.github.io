@@ -46,7 +46,7 @@ const texts = {
 		title: 'React App (Frontend)',
 		links: {
 			github: 'https://github.com/carrn7k/smart-brain',
-			site: ''
+			site: 'https://carrn7k.github.io/smart-brain-project'
 		},
 		text: `The app was built by Andrea Neagoie as part of his web developer course. The app has a user registration system and allows validated
 				users to use a facial software recogntion API from Clarifai. I had studied React before working on this app, and I had grown to really 
