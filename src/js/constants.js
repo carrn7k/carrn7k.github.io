@@ -32,7 +32,7 @@ const texts = {
 		title: 'SPA (Neighborhood Map)',
 		links: {
 			github: 'https://github.com/carrn7k/neighborhood-map',
-			site: 'projects/neighborhood-map/dist/templates/index.html'
+			site: ''
 		},
 		text: `I had a lot of fun building this app, as it gave me a chance to really understand and explore the possibilites that APIs can 
 				offer. The app features a location in a particular city and allows users to search for notable attractions around that area that
