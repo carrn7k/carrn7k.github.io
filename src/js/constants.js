@@ -94,6 +94,15 @@ const texts = {
 	 	 visualization and transitions was a bit difficult at first, but I really enjoyed working with the d3 library.`
 	 }
 
+	 reactComplete: {
+	 	title: 'Crown Live React App',
+	 	links: {
+	 		github: 'https://github.com/carrn7k/crwn-clothing',
+	 		site: 'https://crwn-live-heath.herokuapp.com'
+	 	},
+	 	text: `Scalable application built on React/Redux. Data storage and login powered by Firebase. Payment powered by Stripe`
+	 }
+
 }
 
 
