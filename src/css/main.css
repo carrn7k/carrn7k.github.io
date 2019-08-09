@@ -28,7 +28,7 @@ html, body, .main {
 }
 .modal-close {
 	position: absolute;
-  color: white;
+  color: black;
   top: 20px;
   right: 20px;
   font-size: 40px;
@@ -47,13 +47,22 @@ html, body, .main {
 	margin-top: 17px;
 }
 .modal-body {
-	padding: 40px;
+	padding: 40px 80px;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 }
+.modal-body a {
+	text-decoration: none;
+	color: black;
+	text-transform: capitalize;
+	padding: 20px;
+}
+.modal-body a:hover {
+	color: #848282;
+}
 .modal-text-container {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
 
 .landing {
@@ -299,19 +308,41 @@ html, body, .main {
   font-size: 59px;
 }
 .projects-container {
+	/*
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: 	center;
-	height: 55vh;
-	/*margin: -40px 37px 30px 37px;*/
+	*/
+	height: 100vh;
+
 }
+.featured-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+.not-featured-container {
+	margin: 0 auto;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 87%;
+}
+
 .project-tile {
 	position: relative;
 	margin: 30px 7px 2px 7px;
-	width: 21%;
+	/*width: 21%;*/
 	height: 135px;
-	border: 1px solid grey;
+	border: 1px solid black;
+	border-radius: 2px;
 	cursor: pointer;
+}
+.featured {
+	width: 37%;
+	height: 200px;
+}
+.not-featured {
+	width: 21%;
 }
 .project-tile img {
 	width: 100%;
@@ -334,7 +365,7 @@ html, body, .main {
 .project-title-display {
 	height: 49px;
 	font-size: 14px;
-	box-shadow: 1px 1px 3px 1px black;
+	box-shadow: 0px 1px 1px 1px #171717;
 }
 
 /* content section */
@@ -516,7 +547,7 @@ html, body, .main {
 	}
 	
 	#projects h1 {
-		margin-top: -175px;
+		margin-top: -300px;
 	}
 	.projects-container {
 		height: 45vh;
@@ -524,9 +555,14 @@ html, body, .main {
 	#projects-inner {
 		margin: 0;
 	}
-	.project-tile {
-    width: 25%;
-    height: 160px;
+
+	.featured {
+		width: 38%;
+    height: 219px;
+	}
+	.not-featured {
+		width: 25%;
+		height: 160px;
 	}
 
 }
@@ -626,7 +662,13 @@ html, body, .main {
 	#projects h1 {
 		font-size: 40px;
 	}
-	.project-tile {
+	/*.project-tile {
+		height: 136px;
+	}*/
+	.featured {
+		height: 180px;
+	}
+	.not-featured {
 		height: 136px;
 	}
 	
@@ -662,7 +704,7 @@ html, body, .main {
 		margin-top: 15px;
 	}
 	.modal-body {
-		padding: 11px;
+		padding: 11px 35px;
 		font-size: 12px;
 	}
 
@@ -706,7 +748,14 @@ html, body, .main {
 	#projects h1 {
     font-size: 36px;
 	}
-	.project-tile {
+	/*.project-tile {
+		height: 90px;
+	}*/
+
+	.featured {
+		height: 150px;
+	}
+	.not-featured {
 		height: 90px;
 	}
 	.project-title-display {
