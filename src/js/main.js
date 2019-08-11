@@ -2,6 +2,19 @@
 $( document ).ready(function() {
 	$('.landing').css('background-color', 'black');
 	$('#landing-msg').css('color', '#03A9F4');
+	$('.projects-carousel').slick({
+		slidesToShow: 4,
+		dots: true,
+		responsive: [
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1
+	      }
+	    }
+	  ]
+	});
 
 	var learnMore = $('.learn-more');
 	var tabs = $('.tabs');
@@ -156,7 +169,7 @@ $( document ).ready(function() {
 	})
 
 	function loadProject(project) {
-		const currentProject = texts[project.attr('id')];
+		const currentProject = texts[project.attr('name')];
 
 		const currentTitle = currentProject.title;
 		const currentText = currentProject.text;

@@ -15,7 +15,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>
     <title>Portfolio Project</title>
   </head>
 
@@ -100,21 +103,22 @@
             <div class="projects-container">
 
               <div class="featured-container">
-                <div class="project-tile featured" id="reactComplete">
+                <div class="project-tile featured" id="reactComplete" name="reactComplete">
                   <div class="project-title">
                       <p>Crown Clothing App</p>
                   </div>
                   <img src="src/img/crown.png" class="img-responsive img-thumbnail" alt="project picture"></a>
                 </div>
 
-                <div class="project-tile featured" id="item">
+                <div class="project-tile featured" id="item" name="item">
                   <div class="project-title">
                       <p>RESTful App</p>
                   </div>
                   <img src="src/img/item-catalog.png" class="img-responsive img-thumbnail" alt="project picture">
                 </div>
               </div>
-              
+
+              <!--
               <div class="not-featured-container">
                 <div class="project-tile not-featured" id="blog">
                   <div class="project-title">
@@ -152,7 +156,55 @@
                   </div>
                   <img src="src/img/d3.png" class="img-responsive img-thumbnail" alt="project picture"></a>
                 </div>
+            
+              </div>
+              !-->
+              <div class="projects-carousel-container">
+                <div class="projects-carousel">
 
+                  <div class="project-tile not-featured" id="blog" name="blog">
+                    <div class="project-title">
+                        <p>User Blog</p>
+                    </div>
+                    <img src="src/img/blog.png" class="img-responsive img-thumbnail" alt="project picture">
+                  </div>
+
+                  <div class="project-tile not-featured" id="singlePage" name="singlePage">
+                    <div class="project-title">
+                        <p>SPA (Neighborhood Map)</p>
+                    </div>
+                    <img src="src/img/map.png" class="img-responsive img-thumbnail" alt="project picture">
+                  </div>
+
+                  <div class="project-tile not-featured" id="reactFront" name="reactFront">
+                    <div class="project-title">
+                        <p>React App (Frontend)</p>
+                    </div>
+                    <img src="src/img/smart-brain.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+                  </div>
+
+                  <div class="project-tile not-featured" id="reactRedux" name="reactRedux">
+                    <div class="project-title">
+                        <p>React/Redux App</p>
+                    </div>
+                    <img src="src/img/robo.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+                  </div>
+
+                  <div class="project-tile not-featured" id="d3" name="d3">
+                    <div class="project-title">
+                        <p>d3</p>
+                    </div>
+                    <img src="src/img/d3.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+                  </div>
+
+                  <div class="project-tile not-featured" id="reactBack" name="reactBack">
+                    <div class="project-title">
+                        <p>React App (Backend)</p>
+                    </div>
+                    <img src="src/img/react.png" class="img-responsive img-thumbnail" alt="project picture"></a>
+                  </div>
+
+                </div>
               </div>
 
             </div>
@@ -218,9 +270,11 @@
     </div>
 
   </body>
-
+  
+  
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="src/js/constants.js" /></script>
+  <script type="text/javascript" src="static/slick/slick.min.js"></script>
   <script type="text/javascript" src="src/js/main.js" /></script>
 
   </html>
