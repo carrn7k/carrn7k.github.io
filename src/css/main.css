@@ -17,6 +17,10 @@ html, body, .main {
   height: inherit !important;
 }
 
+.slick-next:before, .slick-prev:before {
+    color: black !important;
+}
+
 /* modal */
 .modal {
 	display: none;
@@ -325,7 +329,6 @@ html, body, .main {
 	flex-wrap: wrap;
 	justify-content: 	center;
 	*/
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -336,7 +339,7 @@ html, body, .main {
 .featured-container {
 	display: flex;
 	justify-content: space-evenly;
-	height: 55vh;
+	height: 55%;
 }
 .not-featured-container {
 	margin: 0 auto;
@@ -347,8 +350,7 @@ html, body, .main {
 }
 
 .projects-carousel-container {
-	margin-top: -50px;
-	height: 45vh;
+	height: 45%;
   width: 84%;
 }
 
@@ -559,6 +561,9 @@ html, body, .main {
 
 /* Medium Screens */
 @media screen and (max-width: 960px) {
+	.slick-next:before, .slick-prev:before {
+    font-size: 16px !important;
+	}
 	.modal-title {
 		font-size: 28px;
     margin-top: 5px;
@@ -609,6 +614,15 @@ html, body, .main {
 
 /* Tablet View */
 @media screen and (max-width: 840px) {
+	.slick-prev {
+		top: 63% !important;
+	}
+	.slick-next {
+		top: 63% !important;
+	}
+	.slick-next:before, .slick-prev:before {
+    font-size: 14px !important;
+	}
 	.modal-title {
 		font-size: 26px;
     margin-top: 0px;
@@ -695,10 +709,6 @@ html, body, .main {
 		font-size: 13px;
 	}
 
-	.projects-container {
-		max-height: 50vh;
-	}
-
 	#projects h1 {
 		font-size: 36px;
     margin-right: 15px;
@@ -707,9 +717,7 @@ html, body, .main {
 		height: 136px;
 	}*/
 
-	.projects-carousel-container {
-		margin-top: -88px;
-	}
+
 	.featured {
 		height: 140px;
 	}
@@ -734,6 +742,10 @@ html, body, .main {
 }
 
 @media screen and (max-width: 490px) {
+	.slick-next:before, .slick-prev:before {
+    font-size: 12px !important;
+	}
+
 	.modal-close {
 		top: 20px;
     right: 24px;
@@ -797,15 +809,12 @@ html, body, .main {
     font-size: 36px;
 	}
 	.projects-container {
-		margin: 0;
+		margin: -50px auto;
 	}
 
 	/*.project-tile {
 		height: 90px;
 	}*/
-	.featured-container {
-		margin-top: -55px;
-	}
 	.featured {
 		height: 120px;
 		width: 46%;
@@ -842,6 +851,19 @@ html, body, .main {
 		width: 71%;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	.featured {
+		height: 95px;
+	}
+	#contact-inner h1 {
+		font-size: 25px;
+	}
+	.contact {
+		width: 90%;
+	}
+}
+
 
 
 /* about designs 
