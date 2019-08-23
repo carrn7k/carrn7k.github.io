@@ -181,11 +181,17 @@ $( document ).ready(function() {
 		if (currentGitLink !== '') {
 			gitLink.attr('href', currentGitLink);
 			gitLink.text('Check out the code');
+			gitLink.css('display', 'block');
+		} else {
+			gitLink.css('display', 'none');
 		}
 
 		if (currentSiteLink !== '') {
 			siteLink.attr('href', currentSiteLink);
 			siteLink.text('Check out the site');
+			siteLink.css('display', 'block');
+		} else {
+			siteLink.css('display', 'none');
 		}
 	}
 

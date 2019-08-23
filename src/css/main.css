@@ -69,14 +69,14 @@ html, body, .main {
 	text-decoration: none;
 	color: black;
 	text-transform: capitalize;
-	padding: 20px;
 }
 .modal-body a:hover {
 	color: #848282;
 }
-.modal-text-container {
+.modal-links-container {
+	margin: 30px 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .landing {
@@ -570,7 +570,7 @@ html, body, .main {
 	}
 	.modal-body {
 		padding: 11px;
-		font-size: 17px;
+		font-size: 13px;
 	}
 	.page {
 		min-height: 70vh;
@@ -624,12 +624,12 @@ html, body, .main {
     font-size: 14px !important;
 	}
 	.modal-title {
-		font-size: 26px;
+		font-size: 22px;
     margin-top: 0px;
 	}
 	.modal-body {
 		padding: 11px;
-		font-size: 15px;
+		font-size: 11px;
 	}
 	/* landing mobile */
 	#landing-name {
@@ -748,7 +748,7 @@ html, body, .main {
 
 	.modal-close {
 		top: 20px;
-    right: 24px;
+    right: 29px;
     font-size: 25px;
     color: black;
 	}
@@ -762,7 +762,7 @@ html, body, .main {
 	}
 	.modal-body {
 		padding: 11px 35px;
-		font-size: 12px;
+		font-size: 10px;
 	}
 
 	.tabs, .tab {
