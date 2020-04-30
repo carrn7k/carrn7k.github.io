@@ -12,7 +12,7 @@
   "dependencies": {
     "d3": "^5.7.0",
     "d3-queue": "^3.0.7",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jsdom": "^13.0.0",
     "node-fetch": "^2.3.0"
   }
